@@ -1,0 +1,74 @@
+.color-palette {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.color-palette h2 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.color-section {
+  margin-bottom: 20px;
+}
+
+.color-section:last-child {
+  margin-bottom: 0;
+}
+
+.color-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.color-options {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.color-button {
+  width: 100%;
+  aspect-ratio: 1;
+  border: 3px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.color-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.color-button.active {
+  border-color: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.color-input {
+  width: 100%;
+  height: 40px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.color-input:hover {
+  border-color: #667eea;
+}
+
+@media (max-width: 768px) {
+  .color-options {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
